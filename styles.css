@@ -1,0 +1,705 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the intro section with video */
+.intro-section {
+    background-image: url("back.jpg"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.intro-section h1 {
+    font-size: 36px;
+}
+
+.intro-section p {
+    font-size: 18px;
+}
+
+/* Style the calendar, news, events, and achievements sections */
+.calendar-section, .news-section, .events-section, .achievements-section {
+    background-color: #23222267;
+    padding: 40px 0;
+}
+
+.calendar-section h2, .news-section h2, .events-section h2, .achievements-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Customize further as needed */
+/* Style the logo */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo in the navbar */
+    margin-right: 20px; /* Add some space to separate the logo from menu items */
+}
+
+.logo img {
+    max-height: 50px; /* Adjust the height to fit your logo properly */
+}
+
+/* Adjust the margin of the ul to move the menu items to the right */
+nav ul {
+    margin-left: auto;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* Style the Contact Us form section */
+
+/* Highlight the Contact Us form section */
+.contact-section {
+    padding: 4px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    border: 2px solid #0e1012; /* Add a border */
+    border-radius: 50px; /* Rounded corners */
+    box-sizing: border-box;
+    
+}
+
+.contact-section h2 {
+    font-size: 28px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style the form labels */
+form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style the input fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Style for the news box */
+/* Common styles for news box and heading */
+
+
+/* Style for the news section */
+.news-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Site Map styles */
+.site-map {
+    flex: 1;
+    padding: 10px;
+}
+
+.site-map h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline; /* Add underline to headings */
+}
+
+.site-map ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-map a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.site-map a:hover {
+    color: #aabbcc; /* Change the color on hover */
+}
+
+/* Get in Touch styles */
+.get-in-touch {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.get-in-touch h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline; /* Add underline to headings */
+}
+
+.get-in-touch address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Social Media styles */
+.social-media {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline; /* Add underline to headings */
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin-right: 15px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #aabbcc; /* Change the color on hover */
+}
+
+/* Media queries for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Style for the teacher section */
+.teachers-section {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Styling the section */
+.event-section {
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover;
+}
+
+/* Styling the left floating section */
+.leftBox {
+    width: 50%;
+    height: 50%;
+    margin-top: 70px;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Styling the background of left floating section */
+.leftBox .content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    transition: .5s;
+}
+
+/* Styling the hover effect of left floating section */
+.leftBox .content:hover {
+    background: #e91e63;
+}
+
+/* Styling the header of left floating section */
+.leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+/* Styling the paragraph of left floating section */
+.leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/* Styling the events section */
+.events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+
+/* Styling the links of the events section */
+.events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Styling the lists of the event section */
+.events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the time class of events section */
+.events ul li .time {
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the hover effect of events section */
+.events ul li:hover .time {
+    background: #e91e63;
+}
+
+/* Styling the header of time class of events section */
+.events ul li .time h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the texts of time class of events section */
+.events ul li .time h2 span {
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+/* Styling the details class of events section */
+.events ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+}
+
+/* Styling the header of the details class of events section */
+.events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+/* Styling the lists of the details class of events section */
+.events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Styling the links of the details class of events section */
+.events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1.5px solid #262626;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* Styling the details class's hover effect */
+.events ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+/* Achievements Section Styles */
+.achievements-section {
+    
+    padding: 20px;
+    align-items: center;
+    width: 99%;
+    height: 200%;
+    text-align: center;
+    background-color: #678760;
+    
+}
+
+/* Achievements Columns */
+.achievements-column {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Achievement Styles */
+.achievement {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Left Column Header Styles */
+.achievements-column:first-child h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Right Column Header Styles */
+.achievements-column:last-child h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Achievement Title Styles */
+.achievement h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+/* Achievement Description Styles */
+.achievement p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Clearfix for Floats */
+.achievements-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+}
+
+.circle-arrow {
+    position: relative;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #2f3c43;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/* This part targets the specific element with the class special-grid-container */
+.special-grid-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* gap: 1.5rem; */
+    width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  
+  .special-grid-container h1 {
+    text-align: center;
+    color: rgb(8, 8, 8);
+   font-family: 'Brush Script MT', cursive;font-size: 45px;
+   padding: 50px;
+  }
+  
+  .special-grid-container .grid-container {
+    display: inline-block;
+ 
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%; /* Ensure full width within the container */
+  }
+  
+  .special-grid-container .grid-container div {
+    width: calc(20% - 1.5rem); /* Distribute into 5 columns with spacing */
+    margin: 1 2.5rem 1.5rem 1;
+    display: inline-block;
+    flex-direction: column;
+    
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .special-grid-container .grid-container div:hover img {
+    filter: grayscale(0);
+  }
+  
+  .special-grid-container .grid-container div:hover {
+    border-color: coral;
+  }
+  
+  .special-grid-container .grid-container div img {
+    width: 100%;
+    align-self: flex-start;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .special-grid-container .grid-container div p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* Define a new class */
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e8ecff;
+    position: relative;
+}
+.veiw-box{
+    width: 900px;
+    height: 400px;
+    border-radius: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;    
+}
+#testimonials{
+    display: flex;
+    transition: 0.5s;
+}
+.user{
+    width: 800px;
+    text-align: center;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    background: #321764;
+    border-radius: 200px;
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+.space{
+    margin: 0 70px;
+}
+.user img{
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #e8ecff;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.user p{
+    font-size: 22px;
+    color: #cbb4f5;
+    line-height: 32px;
+    margin: 60px 0 30px;
+}
+.user p::before{
+    content: '\201C';
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -57;
+    margin-right: 10px;
+}
+.user p::after{
+    content: '\201D';
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -70;
+    margin-left: 10px;
+}
+.user h3{
+    font-size: 26px;
+    color: #cbb4f5;
+}
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.controls span{
+    width: 15px;
+    height: 15px;
+    background: #321764;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    width: 45px !important;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Slider</title>
+
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Include jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    
+    <!-- Include Font Awesome (ensure the path is correct) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Your existing styles for news boxes and heading */
+        .news-box, .news-heading {
+            text-align: left;
+            border: 10px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+           
+        }
+
+        /* Style for the news box */
+        .news-box {
+            background-color: #f4f4f4;
+            margin-right: 10px;
+        }
+
+        /* Style for the news thumbnail image */
+        .news-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for the news headline */
+        .news-box h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Style for the news description */
+        .news-box p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Style for the "Read More" link */
+        .news-box .read-more-link {
+            text-decoration: none;
+            color: #1f5d9f;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .news-box .read-more-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the news section */
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        /* Style for the news heading on the left */
+        .news-heading {
+            flex: 1;
+            background-color: #e77c0a;
+            padding-top: 121px;
+            padding-bottom: 121px;
+            padding-left: 1px;
+            padding-right: 1px;
+            color: #fff;
+        }
+
+        /* Style for the "Latest News" text */
+        .news-heading h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Style for the navigation arrows */
+        .owl-prev, .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #1f5d9f;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .owl-prev {
+            left: 10px;
+        }
+
+        .owl-next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="news" class="news-section">
+    <!-- <div class="news-heading" style=" margin-right: 1000px;"> -->
+        <h2 style=" font-family: Georgia, serif; padding: 5px;color: #ffffff;">Latest News</h2>
+   <!-- </div> -->
+
+    <div id="news-slider" class="owl-carousel">
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail" style="padding: 10px;">
+            <h3>News Headline1</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail" style="padding: 10px;">
+            <h3>News Headline2</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail" style="padding: 10px;">
+            <h3>News Headline3</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        $("#news-slider").owlCarousel({
+            items: 3, // Adjust the number of items to display
+            loop: true,
+            margin: 20, // Adjust the margin to match your CSS
+            nav: true, // Show navigation arrows
+            autoplay: true, // Enable auto-play
+            autoplayTimeout: 3000, // Set the auto-play interval in milliseconds (3 seconds in this example)
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+            },
+        });
+    });
+</script>
+
+
+</body>
+</html>
