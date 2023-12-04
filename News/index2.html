@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Slider</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <style>
+        /* Your existing styles */
+
+        /* Ensure full width and proper spacing */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* New styling for the news section container */
+        #news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        /* Adjust the news box styles */
+        .news-box {
+            text-align: left;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .news-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px; /* Center images and add space at the bottom */
+        }
+
+        .news-heading {
+            /* Ensure text is centered */
+            text-align: center;
+            background-color: #e77c0a;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .news-heading h2 {
+            font-size: 24px;
+            margin: 0;
+            font-family: Georgia, serif;
+        }
+
+        /* Adjust the navigation arrows */
+        .owl-prev, .owl-next {
+            font-size: 24px;
+            color: #1f5d9f;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .news-section {
+                padding: 0 10px; /* Adjust padding for smaller screens */
+            }
+
+            .news-box {
+                width: 100%; /* Ensure full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="news" class="news-section">
+    <div class="news-heading">
+        <h2>Latest News</h2>
+    </div>
+
+    <div id="news-slider" class="owl-carousel">
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail">
+            <h3>News Headline1</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail">
+            <h3>News Headline2</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="news-box">
+            <img src="back.jpg" alt="News Thumbnail">
+            <h3>News Headline3</h3>
+            <p>Short description of the news article goes here...</p>
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        $("#news-slider").owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 20,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+            },
+        });
+    });
+</script>
+
+</body>
+</html>

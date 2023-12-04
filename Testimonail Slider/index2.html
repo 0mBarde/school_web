@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonial Slider</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <!-- CSS -->
+  <style>
+    /* Ensure full width */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Section title style */
+    h1 {
+      text-align: center;
+      padding: 50px 0; /* Increased padding for better emphasis */
+      font-size: 40px; /* Adjusted font size for better readability */
+      color: #333;
+      margin-top: 0; /* Remove default margin */
+    }
+
+    /* Testimonial container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px; /* Reduced container padding */
+    }
+
+    /* Slide content style */
+    .slide {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin-bottom: 20px; /* Reduced space between slides */
+    }
+
+    .slide img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .slide p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .details {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Navigation buttons style */
+    .swiper-button-next, .swiper-button-prev {
+      color: #333;
+      font-size: 24px;
+    }
+
+    /* Pagination style */
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+  </style>
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Explore Our Teaching Team</h1>
+  <section class="container">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
+            <img src="images/NS.jpeg" alt="" class="image" />
+            <p>
+              Nilesh Ghanshyam Sontakke
+            </p>
+            <!-- <p>Principal of Shree Satyasai vidyamandir Nagpur</p> -->
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Principal</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/SAC.jpeg" alt="" class="image" />
+            <p>
+              Sushma Ashok Charpe
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/SDR.jpeg" alt="" class="image" />
+            <p>
+              Shital Dnyaneshwar Rathod
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/SPK.jpeg" alt="" class="image" />
+            <p>
+              Sanjay Pundlik Khandar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/SMB.jpeg" alt="" class="image" />
+            <p>
+              Shubhangi M. Bhawsagar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+            <img src="images/ANK.jpeg" alt="" class="image" />
+            <p>
+              Ankush Narendra Kadu
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+            <img src="images/KPK.jpeg" alt="" class="image" />
+            <p>
+              Karuna  Pundlik Kolhe
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+            <img src="images/PYD.jpeg" alt="" class="image" />
+            <p>
+              Praful Yadaorao deotale
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/AMT.jpeg" alt="" class="image" />
+            <p>
+              Akash murlidhar tale
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          
+
+
+          <div class="slide swiper-slide">
+            <img src="images/RGR.jpeg" alt="" class="image" />
+            <p>
+              Ranjana Gendraj Raut
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+
+          <div class="slide swiper-slide">
+            <img src="images/SNK.jpeg" alt="" class="image" />
+            <p>
+              Suchita Narendra Khedekar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/ASY.jpeg" alt="" class="image" />
+            <p>
+              Ashwini Sunilrao Yadav 
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/PSK.jpeg" alt="" class="image" />
+            <p>
+              Priti Subhashrao Kshirsagar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/AST.jpeg" alt="" class="image" />
+            <p>
+              Aruna Santoshrao Talkhande
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/ARM.jpeg" alt="" class="image" />
+            <p>
+              Archana Rajesh Mankar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+
+          <div class="slide swiper-slide">
+            <img src="images/PPK.jpeg" alt="" class="image" />
+            <p>
+              priti prabhakar kanholkar
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Teacher</span>
+              <span class="job">Shree Satyasai vidyamandir Nagpur</span>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
